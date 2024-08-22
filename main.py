@@ -96,13 +96,13 @@ async def restart_data_init() -> None:
             await send_restart_msg(chat_id, message_id, "<b>An Error Occurred!</b>")
             await del_broadcast_data_id()
 
-        task_msg = (
-            "<u><b>Bot Up and Running!</b></u>\n\n"
-            "  <b>Broadcast Status</b>\n"
-            f"    - <code>Chat ID:</code> {chat_id}\n"
-            f"    - <code>Msg ID :</code> {message_id}"
-        )
-        await send_msg_to_admins(task_msg, only_owner=True)
+        # task_msg = (
+        #     "<u><b>Bot Up and Running!</b></u>\n\n"
+        #     "  <b>Broadcast Status</b>\n"
+        #     f"    - <code>Chat ID:</code> {chat_id}\n"
+        #     f"    - <code>Msg ID :</code> {message_id}"
+        # )
+        # await send_msg_to_admins(task_msg, only_owner=True)
 
     except Exception as exc:
         logger.error(str(exc))
