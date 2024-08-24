@@ -140,6 +140,7 @@ async def stop_broadcast_handler(_, message: Message) -> None:
 
 
 @Client.on_callback_query(filters.regex(r"\bbroadcast\b"))
+@authorized_users_only
 async def broadcast_handler_query(_, query: CallbackQuery) -> None:
     await query.message.edit_text("<b>Refreshing...</b>")
     await broadcast_manager.update_progress(query.message)
