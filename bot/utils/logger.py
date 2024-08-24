@@ -44,7 +44,6 @@ class Logger:
         self.log = logging.getLogger(self.log_name)
 
         # Reduce logging level for noisy libraries
-        logging.getLogger("httpx").setLevel(logging.WARNING)
         logging.getLogger("hydrogram").setLevel(logging.WARNING)
         logging.getLogger("pymongo").setLevel(logging.WARNING)
 

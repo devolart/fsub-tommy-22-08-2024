@@ -66,7 +66,7 @@ class Bot(Client):
 
     async def stop(self) -> None:
         """
-        Stops the bot, closes the HTTP session and MongoDB connection.
+        Stops the bot, and closes MongoDB connection.
         """
         logger.info("Bot: Stopping...")
         try:

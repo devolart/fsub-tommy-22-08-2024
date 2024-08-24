@@ -73,13 +73,11 @@ class HelperButtons:
     """
 
     Contact: List[List[Tuple[str, str, str]]] = [
-        [("Contact", f"https://t.me/{config.OWNER_USERNAME}/5", "url")]
+        [("Contact", f"https://t.me/{config.OWNER_USERNAME}/3", "url")]
     ]
     Close: List[List[Tuple[str, str]]] = [[("Close", "close")]]
     Broadcast: List[List[Tuple[str, str]]] = [[("Refresh", "broadcast")]]
     Ping: List[List[Tuple[str, str]]] = [[("Refresh", "ping")]]
-    Eval: List[List[Tuple[str, str]]] = [[("Refresh", "cmd eval")]]
-    Shell: List[List[Tuple[str, str]]] = [[("Refresh", "cmd shell")]]
     Uptime: List[List[Tuple[str, str]]] = [[("Refresh", "uptime")]]
     Menu: List[List[Tuple[str, str]]] = [
         [("Generate Status", "menu generate")],
