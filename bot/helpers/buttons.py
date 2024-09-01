@@ -73,7 +73,7 @@ class HelperButtons:
     """
 
     Contact: List[List[Tuple[str, str, str]]] = [
-        [("Contact", f"https://t.me/{config.OWNER_USERNAME}/3", "url")]
+        [("Contact", f"https://t.me/canonindo", "url")]
     ]
     Close: List[List[Tuple[str, str]]] = [[("Close", "close")]]
     Broadcast: List[List[Tuple[str, str]]] = [[("Refresh", "broadcast")]]
