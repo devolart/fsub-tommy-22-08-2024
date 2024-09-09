@@ -12,3 +12,5 @@ TgCrypto==1.2.5
 typing_extensions==4.12.2
 uvloop==0.20.0
 wheel==0.44.0
+flask
+flask_restful
