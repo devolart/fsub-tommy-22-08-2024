@@ -17,7 +17,7 @@ class Config:
         self.OWNER_ID: int = int(os.environ.get("OWNER_ID", 0))
         self.MONGODB_URL: str = os.environ.get("MONGODB_URL", "")
         self.DATABASE_CHAT_ID: int = int(os.environ.get("DATABASE_CHAT_ID", 0))
-        self.OWNER_USERNAME: str = "IlhamTag"
+        self.OWNER_USERNAME: str = os.environ.get("OWNER_USERNAME", "canonindo")
 
         # Perform validation
         self._validate()
